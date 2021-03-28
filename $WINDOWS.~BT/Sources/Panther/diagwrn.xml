@@ -1,0 +1,178 @@
+ï»¿<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="2260" Fil="" Fun="LogCallback" Uid="50726604" Msg="GetSystemPartitionPath: Unable to find DOS drive path for system partition [\Device\HarddiskVolume2]." PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="2" MD="" DT="2020-12-30T03:44:16"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfwwfp.inf_amd64_neutral_9c945095a0c11616\epfwwfp.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:17"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfwwfp.inf_amd64_neutral_9c945095a0c11616\epfwwfp.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:17"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ehdrv.inf_amd64_neutral_a1fdba2af48a74c3\ehdrv.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:17"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ehdrv.inf_amd64_neutral_a1fdba2af48a74c3\ehdrv.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:17"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\edevmon.inf_amd64_neutral_f1e84483ebac9582\edevmon.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\edevmon.inf_amd64_neutral_f1e84483ebac9582\edevmon.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfw.inf_amd64_neutral_c96331b5a63f1460\epfw.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfw.inf_amd64_neutral_c96331b5a63f1460\epfw.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ekbdflt.inf_amd64_neutral_dbdecb52cd94c6a2\ekbdflt.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ekbdflt.inf_amd64_neutral_dbdecb52cd94c6a2\ekbdflt.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\eamonm.inf_amd64_neutral_d4d816763d963202\eamonm.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\eamonm.inf_amd64_neutral_d4d816763d963202\eamonm.inf]. Error code is [0xE0000102]" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:44:18"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1466" Fil="" Fun="CheckForOtherUsers" Uid="50724864" Msg="CheckForOtherUsers: Found [2] users logged on; check failed." PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:44:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1200" Fil="" Fun="PerformComplianceCheck" Uid="50724864" Msg="PerformComplianceCheck: Compliance check [CheckForOtherUsers] returned a warning [Pokouíte se instalovat systém Windows, zatímco jsou k poítai pihláeni jiní uivatelé. Tito uivatelé mohou ztratit neuloená data, se kterými pracují. Ujistte se, e bhem instalace nebudou k tomuto poítai pihláeni jiní uivatelé.]." PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:44:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="536" Fil="" Fun="Callback_Compliance_PerformStartupChecks" Uid="50724864" Msg="Callback_Compliance_PerformStartupChecks: At least one compliance check returned a warning." PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:44:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5043" Fil="" Fun="pSetWarningFlag" Uid="50855936" Msg="pSetWarningFlag: failed to delete reboot check bypass timestamp. (gle=2)" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="2" MD="" DT="2020-12-30T03:44:24"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5121" Fil="" Fun="CheckRebootRequired" Uid="50858656" Msg="CheckRebootRequired: Windows is required to reboot in order to start upgrade. (PendingFileRename=1, RunONce=0)" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="0" MD="" DT="2020-12-30T03:44:24"/>
+<z:row Cls="D" Sev="50331648" Maj="diagnostic" Min="Def" LN="93" Fil="" Fun="CAccessWMI::LogErrorMessage" Uid="50790438" Msg="Win32_Processor : Unable to retrieve Stepping, vtType = 8. Error code = 0x0" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="diagnostic.dll" Err="0" MD="" DT="2020-12-30T03:44:29"/>
+<z:row Cls="D" Sev="50331648" Maj="diagnostic" Min="Def" LN="93" Fil="" Fun="CAccessWMI::LogErrorMessage" Uid="50790438" Msg="Win32_Processor : Unable to retrieve Stepping, vtType = 8. Error code = 0x0" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="diagnostic.dll" Err="0" MD="" DT="2020-12-30T03:44:31"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5043" Fil="" Fun="pSetWarningFlag" Uid="50855936" Msg="pSetWarningFlag: failed to delete reboot check bypass timestamp. (gle=2)" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="2" MD="" DT="2020-12-30T03:44:31"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5121" Fil="" Fun="CheckRebootRequired" Uid="50858656" Msg="CheckRebootRequired: Windows is required to reboot in order to start upgrade. (PendingFileRename=1, RunONce=0)" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="0" MD="" DT="2020-12-30T03:44:31"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="404" Fil="" Fun="CLanguages::v_InitLanguage" Uid="50987008" Msg="CLanguages::v_InitLanguage - Failed to load en-US resources with error 2. Will load fallback binaries" PID="6032" TID="2756" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="UXLIB.DLL" Err="2" MD="" DT="2020-12-30T03:44:32"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Cpls. Error 2." PID="6032" TID="6604" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:47:19"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Control Panel\Cpls. Error 2." PID="6032" TID="6604" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:47:19"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run. Error 2." PID="6032" TID="6604" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:47:19"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3965" Fil="" Fun="CAppCompatScanner::ScanKeySubKeys" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall. Error 2." PID="6032" TID="6604" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:47:19"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1289" Fil="" Fun="CallbackAppCompatProgress" Uid="50987008" Msg="[APPCOMPAT UI] Got CallbackAppCompatProgress without compat progress page active" PID="6032" TID="6604" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="win32ui.dll" Err="0" MD="" DT="2020-12-30T03:47:19"/>
+</rs:data>
+</xml>
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:rs="urn:schemas-microsoft-com:rowset"
+ xmlns:z="#RowsetSchema">
+<s:Schema id="RowsetSchema">
+<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+<s:AttributeType name="Cls" rs:number="0">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Sev" rs:number="1">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Maj" rs:number="2">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Min" rs:number="3">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="LN" rs:number="4">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Fil" rs:number="5">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Fun" rs:number="6">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Uid" rs:number="7">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Msg" rs:number="8">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="PID" rs:number="9">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="TID" rs:number="10">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="Con" rs:number="11">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Exe" rs:number="12">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Mod" rs:number="13">
+<s:datatype dt:type="string"/>
+</s:AttributeType>
+<s:AttributeType name="Err" rs:number="14">
+<s:datatype dt:type="int"/>
+</s:AttributeType>
+<s:AttributeType name="MD" rs:number="15">
+<s:datatype dt:type="hexBinary"/>
+</s:AttributeType>
+<s:AttributeType name="DT" rs:number="16">
+<s:datatype dt:type="dateTime"/>
+</s:AttributeType>
+</s:ElementType>
+</s:Schema>
+<rs:data>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfwwfp.inf_amd64_neutral_9c945095a0c11616\epfwwfp.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfwwfp.inf_amd64_neutral_9c945095a0c11616\epfwwfp.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ehdrv.inf_amd64_neutral_a1fdba2af48a74c3\ehdrv.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ehdrv.inf_amd64_neutral_a1fdba2af48a74c3\ehdrv.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\edevmon.inf_amd64_neutral_f1e84483ebac9582\edevmon.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\edevmon.inf_amd64_neutral_f1e84483ebac9582\edevmon.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfw.inf_amd64_neutral_c96331b5a63f1460\epfw.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\epfw.inf_amd64_neutral_c96331b5a63f1460\epfw.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ekbdflt.inf_amd64_neutral_dbdecb52cd94c6a2\ekbdflt.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\ekbdflt.inf_amd64_neutral_dbdecb52cd94c6a2\ekbdflt.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="253" Fil="" Fun="GatherDeviceIDsInDriverPackage" Uid="50726356" Msg="GatherDeviceIDsInDriverPackage:Failed to gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\eamonm.inf_amd64_neutral_d4d816763d963202\eamonm.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="185" Fil="" Fun="EnumOnlineDriverStoreCallback" Uid="50726396" Msg="EnumOnlineDriverStoreCallback:Could not gather device ID&apos;s from [C:\Windows\System32\DriverStore\FileRepository\eamonm.inf_amd64_neutral_d4d816763d963202\eamonm.inf]. Error code is [0xE0000102]" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="-536870654" MD="" DT="2020-12-30T03:47:21"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1466" Fil="" Fun="CheckForOtherUsers" Uid="50724864" Msg="CheckForOtherUsers: Found [2] users logged on; check failed." PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:47:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="1200" Fil="" Fun="PerformComplianceCheck" Uid="50724864" Msg="PerformComplianceCheck: Compliance check [CheckForOtherUsers] returned a warning [Pokouíte se instalovat systém Windows, zatímco jsou k poítai pihláeni jiní uivatelé. Tito uivatelé mohou ztratit neuloená data, se kterými pracují. Ujistte se, e bhem instalace nebudou k tomuto poítai pihláeni jiní uivatelé.]." PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:47:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="536" Fil="" Fun="Callback_Compliance_PerformStartupChecks" Uid="50724864" Msg="Callback_Compliance_PerformStartupChecks: At least one compliance check returned a warning." PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="WinSetup.dll" Err="0" MD="" DT="2020-12-30T03:47:23"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5043" Fil="" Fun="pSetWarningFlag" Uid="50855936" Msg="pSetWarningFlag: failed to delete reboot check bypass timestamp. (gle=2)" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="2" MD="" DT="2020-12-30T03:47:24"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5121" Fil="" Fun="CheckRebootRequired" Uid="50858656" Msg="CheckRebootRequired: Windows is required to reboot in order to start upgrade. (PendingFileRename=1, RunONce=0)" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="0" MD="" DT="2020-12-30T03:47:24"/>
+<z:row Cls="D" Sev="50331648" Maj="diagnostic" Min="Def" LN="93" Fil="" Fun="CAccessWMI::LogErrorMessage" Uid="50790438" Msg="Win32_Processor : Unable to retrieve Stepping, vtType = 8. Error code = 0x0" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="diagnostic.dll" Err="0" MD="" DT="2020-12-30T03:47:26"/>
+<z:row Cls="D" Sev="50331648" Maj="diagnostic" Min="Def" LN="93" Fil="" Fun="CAccessWMI::LogErrorMessage" Uid="50790438" Msg="Win32_Processor : Unable to retrieve Stepping, vtType = 8. Error code = 0x0" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="diagnostic.dll" Err="0" MD="" DT="2020-12-30T03:47:27"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5043" Fil="" Fun="pSetWarningFlag" Uid="50855936" Msg="pSetWarningFlag: failed to delete reboot check bypass timestamp. (gle=2)" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="2" MD="" DT="2020-12-30T03:47:28"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="5121" Fil="" Fun="CheckRebootRequired" Uid="50858656" Msg="CheckRebootRequired: Windows is required to reboot in order to start upgrade. (PendingFileRename=1, RunONce=0)" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgloader.dll" Err="0" MD="" DT="2020-12-30T03:47:28"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="404" Fil="" Fun="CLanguages::v_InitLanguage" Uid="50987008" Msg="CLanguages::v_InitLanguage - Failed to load en-US resources with error 2. Will load fallback binaries" PID="7804" TID="5392" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="UXLIB.DLL" Err="2" MD="" DT="2020-12-30T03:47:29"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Cpls. Error 2." PID="7804" TID="6128" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:51:16"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Control Panel\Cpls. Error 2." PID="7804" TID="6128" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:51:16"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3662" Fil="" Fun="CAppCompatScanner::ScanKeyValues" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run. Error 2." PID="7804" TID="6128" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:51:16"/>
+<z:row Cls="D" Sev="50331648" Maj="Def" Min="Def" LN="3965" Fil="" Fun="CAppCompatScanner::ScanKeySubKeys" Uid="50855936" Msg="Failed to open HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall. Error 2." PID="7804" TID="6128" Con="" Exe="C:\$WINDOWS.~BT\Sources\setup.exe" Mod="upgreport.dll" Err="2" MD="" DT="2020-12-30T03:51:16"/>
+</rs:data>
+</xml>
