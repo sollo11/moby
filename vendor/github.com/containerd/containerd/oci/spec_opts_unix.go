@@ -26,6 +26,7 @@ import (
 
 	"github.com/containerd/containerd/containers"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 )
 
@@ -33,7 +34,7 @@ import (
 func WithHostDevices(_ context.Context, _ Client, _ *containers.Container, s *Spec) error {
 	setLinux(s)
 
-	devs, err := getDevices("/dev")
+	devs, err := getDevices("/dev", "")
 	if err != nil {
 		return err
 	}
@@ -41,7 +42,39 @@ func WithHostDevices(_ context.Context, _ Client, _ *containers.Container, s *Sp
 	return nil
 }
 
-func getDevices(path string) ([]specs.LinuxDevice, error) {
+var errNotADevice = errors.New("not a device node")
+
+// WithDevices recursively adds devices from the passed in path and associated cgroup rules for that device.
+// If devicePath is a dir it traverses the dir to add all devices in that dir.
+// If devicePath is not a dir, it attempts to add the signle device.
+func WithDevices(devicePath, containerPath, permissions string) SpecOpts {
+	return func(_ context.Context, _ Client, _ *containers.Container, s *Spec) error {
+		devs, err := getDevices(devicePath, containerPath)
+		if err != nil {
+			return err
+		}
+		s.Linux.Devices = append(s.Linux.Devices, devs...)
+		return nil
+	}
+}
+
+func getDevices(path, containerPath string) ([]specs.LinuxDevice, error) {
+	stat, err := os.Stat(path)
+	if err != nil {
+		return nil, errors.Wrap(err, "error stating device path")
+	}
+
+	if !stat.IsDir() {
+		dev, err := deviceFromPath(path)
+		if err != nil {
+			return nil, err
+		}
+		if containerPath != "" {
+			dev.Path = containerPath
+		}
+		return []specs.LinuxDevice{*dev}, nil
+	}
+
 	files, err := ioutil.ReadDir(path)
 	if err != nil {
 		return nil, err
@@ -56,7 +89,11 @@ func getDevices(path string) ([]specs.LinuxDevice, error) {
 			case "pts", "shm", "fd", "mqueue", ".lxc", ".lxd-mounts", ".udev":
 				continue
 			default:
-				sub, err := getDevices(filepath.Join(path, f.Name()))
+				var cp string
+				if containerPath != "" {
+					cp = filepath.Join(containerPath, filepath.Base(f.Name()))
+				}
+				sub, err := getDevices(filepath.Join(path, f.Name()), cp)
 				if err != nil {
 					return nil, err
 				}
@@ -67,9 +104,9 @@ func getDevices(path string) ([]specs.LinuxDevice, error) {
 		case f.Name() == "console":
 			continue
 		}
-		device, err := deviceFromPath(filepath.Join(path, f.Name()), "rwm")
+		device, err := deviceFromPath(filepath.Join(path, f.Name()))
 		if err != nil {
-			if err == ErrNotADevice {
+			if err == errNotADevice {
 				continue
 			}
 			if os.IsNotExist(err) {
@@ -77,12 +114,15 @@ func getDevices(path string) ([]specs.LinuxDevice, error) {
 			}
 			return nil, err
 		}
+		if containerPath != "" {
+			device.Path = filepath.Join(containerPath, filepath.Base(f.Name()))
+		}
 		out = append(out, *device)
 	}
 	return out, nil
 }
 
-func deviceFromPath(path, permissions string) (*specs.LinuxDevice, error) {
+func deviceFromPath(path string) (*specs.LinuxDevice, error) {
 	var stat unix.Stat_t
 	if err := unix.Lstat(path, &stat); err != nil {
 		return nil, err
@@ -94,7 +134,7 @@ func deviceFromPath(path, permissions string) (*specs.LinuxDevice, error) {
 		minor     = unix.Minor(devNumber)
 	)
 	if major == 0 {
-		return nil, ErrNotADevice
+		return nil, errNotADevice
 	}
 
 	var (
@@ -107,7 +147,7 @@ func deviceFromPath(path, permissions string) (*specs.LinuxDevice, error) {
 	case mode&unix.S_IFCHR == unix.S_IFCHR:
 		devType = "c"
 	}
-	fm := os.FileMode(mode)
+	fm := os.FileMode(mode &^ unix.S_IFMT)
 	return &specs.LinuxDevice{
 		Type:     devType,
 		Path:     path,

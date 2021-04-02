@@ -1,3 +1,5 @@
+// +build !linux
+
 /*
    Copyright The containerd Authors.
 
@@ -15,6 +17,13 @@
 */
 
 package sys
+
+const (
+	// OOMScoreMaxKillable is not implemented on non Linux
+	OOMScoreMaxKillable = 0
+	// OOMScoreAdjMax is not implemented on non Linux
+	OOMScoreAdjMax = 0
+)
 
 // SetOOMScore sets the oom score for the process
 //
