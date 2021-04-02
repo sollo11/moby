@@ -10,7 +10,6 @@ import (
 	containertypes "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/container"
 	"github.com/docker/docker/errdefs"
-	_ "github.com/docker/docker/pkg/discovery/memory"
 	"github.com/docker/docker/pkg/idtools"
 	"github.com/docker/docker/pkg/truncindex"
 	volumesservice "github.com/docker/docker/volume/service"
