@@ -8,6 +8,7 @@
 test.main
 .*.swp
 .DS_Store
+<<<<<<< Updated upstream
 # a .bashrc may be added to customize the build environment
 .bashrc
 .editorconfig
@@ -21,3 +22,15 @@ vendor/pkg/
 go-test-report.json
 profile.out
 junit-report.xml
+=======
+/node_modules/
+/src/node_modules/@sapper/
+yarn-error.log
+/cypress/screenshots/
+/__sapper__/
+/static/main.css
+contrib/check-config.sh
+integration/service/inspect_test.go
+libcontainerd/local/local_windows.go
+libcontainerd/remote/client_windows.go
+>>>>>>> Stashed changes

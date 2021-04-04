@@ -16,6 +16,14 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+<<<<<<< Updated upstream
+=======
+const (
+	runtimeName       = "io.containerd.runhcs.v1"
+	shimV2RuntimeName = runtimeName
+)
+
+>>>>>>> Stashed changes
 func summaryFromInterface(i interface{}) (*libcontainerdtypes.Summary, error) {
 	switch pd := i.(type) {
 	case *options.ProcessDetails:

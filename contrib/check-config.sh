@@ -301,8 +301,11 @@ flags=(
 	IP_VS_PROTO_TCP
 	IP_VS_PROTO_UDP
 	IP_VS_RR
+<<<<<<< Updated upstream
 	SECURITY_SELINUX
 	SECURITY_APPARMOR
+=======
+>>>>>>> Stashed changes
 )
 check_flags "${flags[@]}"
 
